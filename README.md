@@ -70,16 +70,19 @@ curl -X POST http://localhost:5001/event \
 ### Get statistics
 curl http://localhost:5002/stats
 
-Documentation
-- A complete technical document is available in the docs/ folder:
 
-- Documento Técnico (PDF)
 
-Authors
 
-- Daniel Alexander Brand García
+## Documentation
+A complete technical document is available in the docs/ folder:
 
-Notes
-- The PySpark job runs every 5 minutes automatically.
-- The system uses idempotent UPSERT operations to ensure data consistency.
-- All services communicate through an internal overlay network
+ Documento Técnico (PDF)
+
+## Authors
+
+Daniel Alexander Brand García
+
+## Notes
+The PySpark job runs every 5 minutes automatically.
+The system uses idempotent UPSERT operations to ensure data consistency.
+All services communicate through an internal overlay network
