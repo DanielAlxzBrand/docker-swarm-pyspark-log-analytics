@@ -28,10 +28,10 @@ The system consists of 4 main services orchestrated with Docker Swarm:
 
 ## Technologies
 
-- **Docker Swarm** — Container orchestration
-- **PySpark 3.4** — Distributed data processing
-- **PostgreSQL 14** — Relational database
-- **Flask** — REST APIs
+- **Docker Swarm** - Container orchestration
+- **PySpark 3.4** - Distributed data processing
+- **PostgreSQL 14** - Relational database
+- **Flask** - REST APIs
 - **Python 3.9**
 
 ## Deployment
@@ -71,16 +71,21 @@ curl -X POST http://localhost:5001/event \
 curl http://localhost:5002/stats
 
 
-
-
 ## Documentation
-A complete technical document is available in the docs/ folder:
 
- Documento Técnico (PDF)
+A complete technical document is available in the `docs/` folder:
+
+- [Documento Técnico (PDF)](docs/Documento_Tecnico_Proyecto_Final.pdf)
 
 ## Authors
 
-Daniel Alexander Brand García
+- Daniel Alexander Brand García
+
+## Notes
+
+- The PySpark job runs every 5 minutes automatically.
+- The system uses idempotent UPSERT operations to ensure data consistency.
+- All services communicate through an internal overlay network.
 
 ## Notes
 The PySpark job runs every 5 minutes automatically.
